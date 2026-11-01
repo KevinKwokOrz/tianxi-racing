@@ -1,6 +1,6 @@
-# Data Integrity Audit · 2026-10-31
+# Data Integrity Audit · 2026-11-01
 
-**Overall:** 🟡 `warn`  ·  critical gaps: **0**  ·  warn gaps: 2
+**Overall:** 🟡 `warn`  ·  critical gaps: **0**  ·  warn gaps: 7
 
 **Recommendation:** `monitor_no_block`
 
@@ -8,7 +8,7 @@
 
 | Category | Severity | Expected | Present | Missing | Stale | Pending | Notes |
 |---|---|---|---|---|---|---|---|
-| race_artefacts | 🟢 ok | 790 | 790 | 0 | 0 | 0 | Official cancellation notices verified: 2025-09-24, 2026-09-20 |
+| race_artefacts | 🟡 warn | 795 | 790 | 0 | 0 | 5 | Official cancellation notices verified: 2025-09-24, 2026-09-20; same-day artefacts pending until verified final start +30m: 2026-11-01T18:20:00+08:00 |
 | fixtures_cache | 🟢 ok | 1 | 232 | 0 | 0 | 0 | total cached race days: 232 |
 | horse_profiles | 🟢 ok | 1189 | 1189 | 0 | 0 | 0 | total profiles in DB: 6131 |
 | horse_form_records | 🟢 ok | 1189 | 1189 | 0 | 0 | 0 | total form_records files: 6131 |
@@ -17,4 +17,4 @@
 | trainer_profiles | 🟢 ok | 25 | 25 | 0 | 0 | 0 | total trainer profiles: 68 |
 | trainer_records | 🟢 ok | 68 | 68 | 0 | 0 | 0 |  |
 | trial_results | 🟢 ok | 1 | 1 | 0 | 0 | 0 | trial rows: 9854 |
-| entries_upcoming | 🟡 warn | 2 | 0 | 2 | 0 | 0 | 2 upcoming race days lack entries file |
+| entries_upcoming | 🟡 warn | 3 | 1 | 2 | 0 | 0 | 2 upcoming race days lack entries file |
